@@ -1,0 +1,159 @@
+/* =========================
+   TAILWIND BASE
+========================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* =========================
+   ROOT VARIABLES (OPTIONAL)
+========================= */
+:root {
+  --bg-primary: #f3f4f6;   /* gray-100 */
+  --text-primary: #111827; /* gray-900 */
+}
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+/* =========================
+   BODY STYLING
+========================= */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #111827;
+}
+
+p {
+  color: #4b5563; /* gray-600 */
+}
+
+
+/* =========================
+   SCROLLBAR (PREMIUM UI)
+========================= */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5f5; /* soft purple */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* =========================
+   TEXT CLAMP UTILITIES
+========================= */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* =========================
+   CUSTOM COMPONENT STYLES
+========================= */
+
+/* Card base */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Badge */
+.badge {
+  font-size: 12px;
+  background: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Button (basic) */
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+
+/* =========================
+   INPUT STYLING
+========================= */
+input {
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+
+/* =========================
+   SMOOTH TRANSITIONS
+========================= */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
